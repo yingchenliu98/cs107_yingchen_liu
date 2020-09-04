@@ -1,1 +1,1 @@
-# cs107_-yingchen-_-liu-
+# cs107_yingchen_liu
