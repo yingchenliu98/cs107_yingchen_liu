@@ -6,5 +6,3 @@ lecture slides and notebooks
 homeworks folder
 * pair-programming
 pair-programming works
-
-
