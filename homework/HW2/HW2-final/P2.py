@@ -22,12 +22,13 @@ def dna_complement(sequence):
         dna = sequence.upper()
     else:
        return None
+   
     dna_bases = 'ATGC'
-  
-    for char in dna:
-        if not char in dna_bases:
-            return None
     
+    for char in dna:
+        if char not in dna_bases:
+            return None
+
     complements = {"A":"T", 
                    "T":"A", 
                    "G":"C", 
@@ -36,12 +37,13 @@ def dna_complement(sequence):
     for char in dna:
         ret += complements[char]
     
-    
-    ## demo1
-    test1 = 'acTGCAt'
-    print(test1)
-    print(dna_complement(test1))
-    ## demo2
-    test2 = 'asdmketgc'
-    print(test2)
-    print(dna_complement(test2))
+    return ret
+
+## demo1
+test1 = 'acTG'
+print('The input DNA sequence is: ', test1)
+print('The output complement DNA sequence is :', dna_complement(test1))
+## demo2
+test2 = 'asdmketgc'
+print('The input DNA sequence is: ', test2)
+print('The output complement DNA sequence is :', dna_complement(test2))
