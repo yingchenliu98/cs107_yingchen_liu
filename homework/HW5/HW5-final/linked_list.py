@@ -38,16 +38,13 @@ class LinkedList:
 
     def append(self, val):
         return LinkedList(self._head, self._tail.append(val))
-  
-    
+
     def for_each(self, fun):
         return LinkedList(fun(self._head), self._tail.for_each(fun))
     
-    
     def summation(self):
         return self._head + self._tail.summation() if self._tail else self._head
-        return self._head + self._tail.summation() if self._tail else self._head
-    
+        
     def minimum(self):
         def smaller(a, b):
             return a if a < b else b
