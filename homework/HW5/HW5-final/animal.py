@@ -40,12 +40,12 @@ class Animal:
         assert into in Animal.valid_species, Exception(f'invalid species: {into}')
         self._species = into
         
- 
-if __name__ == '__main__':
-    dog = Animal('Fido', 'xxxx')
-    print(vars(dog))
-    print(dog.species)
+# # demo
+# if __name__ == '__main__':
+#     dog = Animal('Fido', 'xxxx')
+#     print(vars(dog))
+#     print(dog.species)
     
-    dog.species = 'cat'
-    print(dog.species)
-    dog.species = 'TheThing'
+#     dog.species = 'cat'
+#     print(dog.species)
+#     dog.species = 'TheThing'
