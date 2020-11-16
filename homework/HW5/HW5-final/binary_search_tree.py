@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Nov  4 19:16:29 2020
-
 @author: yingchenliu
 """
 
@@ -73,4 +72,3 @@ class BSTTable:
 #     greektoroman.put('Aphrodite', 'Venus')
 #     print(greektoroman)
 #     print(greektoroman.get('Eros'))
-    
